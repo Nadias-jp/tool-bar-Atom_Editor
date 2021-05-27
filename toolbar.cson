@@ -1,0 +1,129 @@
+# This file is used by Flex Tool Bar to create buttons on your Tool Bar.
+# For more information how to use this package and create your own buttons,
+#   read the documentation on https://atom.io/packages/flex-tool-bar
+
+[
+  {
+    type: "button"
+    tooltip: "サイドバー"
+    callback: "tree-view:toggle"
+    icon: "page-layout-sidebar-left"
+    iconset: "mdi"
+  }
+  {
+    type: "spacer"
+  }
+  {
+    type: "button"
+    tooltip: "新規作成"
+    callback: "application:new-file"
+    icon: "file-plus-outline"
+    iconset: "mdi"
+  }
+  {
+    type: "button"
+    tooltip: "開く"
+    callback: "application:open-folder"
+    icon: "folder-open-outline"
+    iconset: "mdi"
+  }
+  {
+    type: "button"
+    tooltip: "保存"
+    callback: "core:save"
+    icon: "content-save-outline"
+    iconset: "mdi"
+  }
+  {
+    type: "button"
+    tooltip: "すべて保存"
+    callback: "window:save-all"
+    icon: "content-save-settings-outline"
+    iconset: "mdi"
+  }
+  {
+    type: "button"
+    tooltip: "プロジェクト一覧"
+    dependency: "project-manager"
+    callback: "project-manager:list-projects"
+    icon: "file-submodule"
+  }
+  {
+    type: "spacer"
+  }
+  {
+    type: "button"
+    tooltip: "戻る"
+    callback: "core:undo"
+    icon: "undo"
+    iconset: "mdi"
+  }
+  {
+    type: "button"
+    tooltip: "やり直す"
+    callback: "core:redo"
+    icon: "redo"
+    iconset: "mdi"
+  }
+  {
+    type: "button"
+    tooltip: "検索と置換"
+    callback: "find-and-replace:toggle"
+    icon: "file-document-box-search-outline"
+    iconset: "mdi"
+  }
+  {
+    type: "button"
+    tooltip: "Github"
+    dependency: "open-on-github"
+    callback: "open-on-github:file"
+    icon: "git"
+    iconset: "mdi"
+  }
+  {
+    type: "button"
+    tooltip: "markdown"
+    dependency: "markdown-preview"
+    callback: "markdown-preview:toggle"
+    show: "markdown"
+    disable: "!markdown"
+    icon: "markdown"
+    iconset: "mdi"
+  }
+  {
+    type: "button"
+    tooltip: "比較"
+    dependency: "compare-files"
+    callback: "compare-files:compare"
+    icon: "file-compare"
+    iconset: "mdi"
+    }
+  {
+    type: "button"
+    callback: "atom-beautify:beautify-editor"
+    tooltip: "テキスト整形"
+    icon: "code-braces"
+    iconset: "mdi"
+    mode: "atom-text-editor"
+  }
+  {
+    type: "spacer"
+  }
+  {
+    type: "button"
+    callback: "flex-tool-bar:edit-config-file"
+    tooltip: "flex設定"
+    icon: "tune"
+    iconset: "mdi"
+  }
+  {
+    type: "button"
+    callback: "settings-view:open"
+    tooltip: "設定"
+    icon: "settings"
+    iconset: "mdi"
+  }
+  {
+    type: "spacer"
+  }
+]
